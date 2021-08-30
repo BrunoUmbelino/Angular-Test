@@ -1,0 +1,35 @@
+<div class="filters">
+  <mat-form-field>
+    <mat-label>Sort</mat-label>
+    <mat-select panelClass="sort-select" [(ngModel)]="sort">
+      <mat-option value="name">Name</mat-option>
+      <mat-option value="-released">Released</mat-option>
+      <mat-option value="-added">Added</mat-option>
+      <mat-option value="-created">Created</mat-option>
+      <mat-option value="-updated">Updated</mat-option>
+      <mat-option value="-rating">Rating</mat-option>
+      <mat-option value="metacritic">Metacritic</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div class="games">
+    <div class="game">
+      <div class="game-thumb-container">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbonjournature.fr%2Fwp-content%2Fuploads%2Fimage-de-paysage-colore.jpg&f=1&nofb=1"
+          alt="thumbmail"
+          class="game-thumbmail"
+        />
+      </div>
+      <div class="game-description">
+        <p class="game-name"></p>
+        <div class="game-platforms">
+          <img
+            class="game-platform"
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.CjslZs8brcBlz2pHXRpDWgHaFj%26pid%3DApi&f=1"
+            alt="slug"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
